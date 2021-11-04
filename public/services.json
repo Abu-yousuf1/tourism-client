@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Paris Hill Tour",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-1.png",
+        "doc": "It's a nice place in paris."
+    },
+    {
+        "id": 2,
+        "name": "Lake Garda, Italy",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-2.png",
+        "doc": "It's a nice place in paris."
+    },
+    {
+        "id": 3,
+        "name": "Mount Dtna, Italyr",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-3.png",
+        "doc": "It's a nice place in paris."
+    },
+    {
+        "id": 4,
+        "name": " Amalfi Costa, Italy",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-4.png",
+        "doc": "It's a nice place in paris."
+    },
+    {
+        "id": 5,
+        "name": " French Rivira, France",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-5.png",
+        "doc": "It's a nice place in paris."
+    },
+    {
+        "id": 6,
+        "name": " Lake Geneva, France",
+        "image": "https://demo.egenslab.com/html/tourx/assets/images/package/p-6.png",
+        "doc": "It's a nice place in paris."
+    }
+]

@@ -1,0 +1,12 @@
+.formList {
+    margin: 30px 100px;
+    align-items: center;
+}
+
+.formList input {
+    display: block;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+    width: 300px;
+}
