@@ -7,7 +7,7 @@ import Reviews from '../Review/Reviews';
 const Services = () => {
     const [user, setUser] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://vast-beach-23588.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setUser(data))
     }, [])

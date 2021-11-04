@@ -14,7 +14,7 @@ const PlaceOrder = () => {
     const onSubmit = data => {
         const orderService = id
         data.order = orderService;
-        fetch('http://localhost:5000/orders', {
+        fetch('https://vast-beach-23588.herokuapp.com/orders', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

@@ -11,7 +11,7 @@ const ManageOrder = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        fetch("http://localhost:5000/services", {
+        fetch("https://vast-beach-23588.herokuapp.com/services", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -28,7 +28,7 @@ const ManageOrder = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://vast-beach-23588.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 setOrders(data);
@@ -40,7 +40,7 @@ const ManageOrder = () => {
     const handelDelete = id => {
         const proceed = window.confirm('Are you sure,you want to delete?')
         if (proceed) {
-            fetch(`http://localhost:5000/logInService/${id}`, {
+            fetch(`https://vast-beach-23588.herokuapp.com/logInService/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

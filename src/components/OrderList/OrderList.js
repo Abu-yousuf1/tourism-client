@@ -14,7 +14,7 @@ const OrderList = () => {
 
     useEffect(() => {
         const key = { email: user.email };
-        fetch('http://localhost:5000/logInService', {
+        fetch('https://vast-beach-23588.herokuapp.com/logInService', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -37,7 +37,7 @@ const OrderList = () => {
     const handelDelete = id => {
         const proceed = window.confirm('Are you sure,you want to delete?')
         if (proceed) {
-            fetch(`http://localhost:5000/logInService/${id}`, {
+            fetch(`https://vast-beach-23588.herokuapp.com/logInService/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
