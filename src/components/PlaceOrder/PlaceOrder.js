@@ -5,14 +5,29 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './PlaceOrder.css'
 import useAuth from '../../hooks/useAuth';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const PlaceOrder = () => {
-
+    const [orders, setOrders] = useState([])
     const { id } = useParams();
     const { user } = useAuth();
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+    useEffect(() => {
+        fetch(`https://vast-beach-23588.herokuapp.com/services/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                setOrders(data);
+            })
+
+    }, [])
+    console.log("orderssss", orders);
+
+
+
     const onSubmit = data => {
-        const orderService = id
+        const orderService = orders
         data.order = orderService;
         fetch('https://vast-beach-23588.herokuapp.com/orders', {
             method: "POST",
