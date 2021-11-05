@@ -66,7 +66,7 @@ const ManageOrder = () => {
 
                             <input placeholder="Enter service name"  {...register("name")} />
                             <input placeholder="Enter ImageUrl"  {...register("image")} />
-                            <input placeholder="Enter service Description" {...register("Description")} />
+                            <input placeholder="Enter service Description" {...register("doc")} />
 
 
 
