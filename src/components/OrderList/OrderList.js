@@ -63,7 +63,7 @@ const OrderList = () => {
                         <tr>
 
                             <th>User Name</th>
-                            <th>User Address</th>
+                            {/* <th>User Address</th> */}
                             <th>Service Name</th>
                             <th>Service Image</th>
                             <th>cancel Order</th>
@@ -77,9 +77,9 @@ const OrderList = () => {
                             <tbody key={service._id}>
                                 <tr>
                                     <td>{service?.name}</td>
-                                    <td>{service?.Address}</td>
+                                    {/* <td>{service?.Address}</td> */}
                                     <td>{service?.order?.name}</td>
-                                    <td><img src={service?.order?.image} className="w-25" alt="" /></td>
+                                    <td className="w-25"><img src={service?.order?.image} className="w-25" alt="" /></td>
                                     <td><button onClick={() => handelDelete(service?._id)} className="btn btn-warning">delete order</button></td>
                                 </tr>
 

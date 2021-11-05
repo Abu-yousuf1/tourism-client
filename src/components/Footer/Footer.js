@@ -7,7 +7,7 @@ import useAuth from './../../hooks/useAuth';
 const Footer = () => {
     const { user, logout } = useAuth();
     return (
-        <div className="footer-bg-color ps-4 text-light row">
+        <div className="footer-bg-color ps-lg-4 px-3 text-light row">
             <div className="col-lg-3 m-lg-5 m-2">
                 <h1><span className="fw-bold secondary-color">Fly Away Allies</span></h1>
                 <p className="text-muted mt-4 fw-bold">Travelers are always looking for inspiration to guide their adventures. Coming up with a list of places to visit can be challenging when you're staring at a globe.
@@ -27,7 +27,7 @@ const Footer = () => {
                 }
                 {
                     user?.email ?
-                        <button className="btn" onClick={logout}>Log Out</button>
+                        <Navbar.Text>  <button className="btn text-primary" onClick={logout}>Log Out</button> </Navbar.Text>
                         :
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>
                 }

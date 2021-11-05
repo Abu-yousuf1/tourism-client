@@ -75,9 +75,9 @@ const ManageOrder = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-8">
+                <div className="col-lg-8 px-lg-0 px-4">
                     <h3 className="text-center primary-color">Manage all Order</h3>
-                    <div className="container my-5">
+                    <div className=" my-5">
 
                         <Table striped bordered hover variant="light">
                             <thead>
@@ -86,13 +86,9 @@ const ManageOrder = () => {
                                     <th>User Name</th>
                                     <th>User Address</th>
                                     <th>Service Name</th>
-                                    <th>Service Image</th>
                                     <th>cancel Order</th>
                                 </tr>
                             </thead>
-
-
-
                             {
                                 orders.map(service =>
                                     <tbody key={service._id}>
@@ -100,7 +96,6 @@ const ManageOrder = () => {
                                             <td>{service?.name}</td>
                                             <td>{service?.Address}</td>
                                             <td>{service?.order?.name}</td>
-                                            <td><img src={service?.order?.image} className="w-25" alt="" /></td>
                                             <td><button onClick={() => handelDelete(service?._id)} className="btn btn-warning">delete order</button></td>
                                         </tr>
 
