@@ -25,7 +25,7 @@ const Header = () => {
                             }
                             {
                                 user?.email ?
-                                    <Navbar.Text>  <span className="btn" onClick={logout}>Log Out</span> </Navbar.Text>
+                                    <button className="btn" onClick={logout}>Log Out</button>
                                     :
                                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
                             }
