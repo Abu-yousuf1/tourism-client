@@ -103,10 +103,10 @@ const ManageOrder = () => {
                                 )
                             }
                         </Table>
-
                     </div>
                 </div>
             </div>
+
             <Footer />
         </div>
     );
